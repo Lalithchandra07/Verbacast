@@ -51,5 +51,5 @@ verbacast/
 
 ├── locale/
 ├── manage.py
-└── requirements.txt
+
 
