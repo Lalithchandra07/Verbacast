@@ -34,13 +34,21 @@ VerbaCast is a Django-powered web application that automates the process of tran
 
 verbacast/
 ├── core/
+
 │ ├── templates/core/
+
 │ ├── static/core/
+
 │ ├── views.py
+
 │ └── urls.py
+
 ├── static/
+
 │ └── app/
+
 ├── templates/
+
 ├── locale/
 ├── manage.py
 └── requirements.txt
