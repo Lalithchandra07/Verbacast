@@ -1,0 +1,27 @@
+{% extends 'app/base.html' %}
+
+{% block title %}
+<title>Login </title>
+{%  endblock title  %}
+
+{% block content  %} 
+    <h1>this is login page</h1>
+    <hr>
+    <form method="post">
+    <div class="card" style="width: 40rem;margin: 10px auto;">
+        <div class="card-body">
+         {% csrf_token %}  
+         <label for="Username">Username: </label>
+         <input type="text" name="username" id="username"><br><br>
+         <label for="password">password</label>
+         <input type="password" name="password" id="password"><br><br>
+         <button class="btn btn-success" type="submit">Login</button>
+        </div>
+    </div>
+    </form>
+    {% if error %}
+
+    <p style="color: red;">{{  error  }}</p>
+
+    {% endif %}
+{%  endblock %} 

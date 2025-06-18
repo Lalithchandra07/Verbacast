@@ -1,0 +1,223 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-13 06:48+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+#: .\app\templates\app\about.html:8
+msgid "About VerbaCast"
+msgstr "О VerbaCast"
+
+msgid "Breaking language barriers in video communication"
+msgstr "Преодоление языковых барьеров в видеокоммуникации"
+
+msgid " Goal"
+msgstr " Цель"
+
+msgid ""
+"VerbaCast is designed to make video content accessible across different "
+"languages and cultures. Its primary goal is to translate spoken content in "
+"videos, generate accurate captions, and provide voice-overs in the target "
+"language, creating a seamless multilingual experience."
+msgstr ""
+"VerbaCast предназначен для того, чтобы сделать видеоконтент доступным на разных языках и для разных культур. "
+"Его основная цель — переводить устную речь в видео, создавать точные субтитры и озвучку на целевом языке, "
+"обеспечивая плавный мультиязычный опыт."
+
+msgid "How It Works"
+msgstr "Как это работает"
+
+msgid "Upload Video:</strong> The user uploads a video file to the VerbaCast platform."
+msgstr "Загрузка видео:</strong> Пользователь загружает видеофайл на платформу VerbaCast."
+
+msgid "Audio Extraction:</strong> Audio is extracted from the video using audio processing tools."
+msgstr "Извлечение аудио:</strong> Аудио извлекается из видео с помощью инструментов обработки звука."
+
+msgid "Speech Recognition:</strong> The extracted audio is transcribed into text using speech-to-text models."
+msgstr "Распознавание речи:</strong> Извлечённый звук преобразуется в текст с помощью моделей распознавания речи."
+
+msgid "Translation:</strong> The transcribed text is translated into the desired target language using reliable translation APIs."
+msgstr "Перевод:</strong> Полученный текст переводится на целевой язык с помощью надёжных API-переводов."
+
+msgid "Text-to-Speech:</strong> The translated text is converted into natural-sounding speech."
+msgstr "Преобразование текста в речь:</strong> Переведённый текст преобразуется в речь с естественным звучанием."
+
+msgid "Caption Generation:</strong> Translated text is also used to generate subtitles in the target language."
+msgstr "Создание субтитров:</strong> Переведённый текст также используется для создания субтитров на нужном языке."
+
+msgid "Video Rendering:</strong> The translated voice and captions are synchronized and embedded back into the video."
+msgstr "Рендеринг видео:</strong> Озвучка и субтитры синхронизируются и встраиваются обратно в видео."
+
+msgid "Welcome to VerbaCast"
+msgstr "Добро пожаловать в VerbaCast"
+
+msgid "Break language barriers in videos. Globally. Seamlessly."
+msgstr "Разрушайте языковые барьеры в видео. По всему миру. Без усилий."
+
+msgid "What VerbaCast Does"
+msgstr "Что делает VerbaCast"
+
+msgid "Speech Recognition</strong>: detects and transcribes spoken content."
+msgstr "Распознавание речи</strong>: обнаруживает и преобразует устную речь в текст."
+
+msgid "Translation Engine</strong>: Translates audio into 18 languages with high accuracy."
+msgstr "Модуль перевода</strong>: Переводит аудио на 18 языков с высокой точностью."
+
+msgid "Captions/Subtitles</strong>: Adds accurate, bilingual, and styled captions."
+msgstr "Субтитры</strong>: Добавляет точные, двуязычные и стилизованные субтитры."
+
+msgid "Audio Replacement</strong>: Overwrites original audio with natural TTS output."
+msgstr "Замена аудио</strong>: Заменяет оригинальный звук естественной синтезированной речью."
+
+msgid "Why Choose VerbaCast"
+msgstr "Почему выбирают VerbaCast"
+
+msgid "Expand your audience across regions and cultures."
+msgstr "Расширьте свою аудиторию по регионам и культурам."
+
+msgid "Accurate speech-to-text and translation using state-of-the-art AI."
+msgstr "Точное преобразование речи в текст и перевод с использованием новейшего ИИ."
+
+msgid "Intuitive workflow — no editing experience needed."
+msgstr "Интуитивный процесс — не требует опыта редактирования."
+
+msgid "Works across desktop and mobile browsers."
+msgstr "Работает на настольных и мобильных браузерах."
+
+msgid "Privacy-first: Your files stay yours."
+msgstr "Конфиденциальность в приоритете: ваши файлы остаются вашими."
+
+msgid "Supported Languages"
+msgstr "Поддерживаемые языки"
+
+msgid "English, Hindi, Telugu, Tamil, Malayalam, Bengali, Arabic, French, German, Chinese, and more…"
+msgstr "Английский, хинди, телугу, тамильский, малаялам, бенгальский, арабский, французский, немецкий, китайский и другие…"
+
+msgid "Upload your video"
+msgstr "Загрузите своё видео"
+
+msgid "Select the target language"
+msgstr "Выберите целевой язык"
+
+msgid "Download the translated video."
+msgstr "Скачайте переведённое видео."
+
+msgid "Use Cases"
+msgstr "Примеры использования"
+
+msgid "Video localization for global marketing"
+msgstr "Локализация видео для глобального маркетинга"
+
+msgid "Educational content in regional languages"
+msgstr "Образовательный контент на региональных языках"
+
+msgid "Dubbing for YouTubers, creators, and filmmakers"
+msgstr "Дублирование для блогеров, создателей контента и режиссёров"
+
+msgid "News and informational videos in native dialects"
+msgstr "Новости и информационные видео на родных диалектах"
+
+msgid "Try VerbaCast Now"
+msgstr "Попробуйте VerbaCast прямо сейчас"
+
+msgid "Upload your first video and see VerbaCast in action"
+msgstr "Загрузите своё первое видео и увидьте VerbaCast в действии"
+
+msgid "Get Started"
+msgstr "Начать"
+
+msgid "Translate"
+msgstr "Перевести"
+
+msgid "Translated Video"
+msgstr "Переведённое видео"
+
+msgid "Your browser does not support the video tag."
+msgstr "Ваш браузер не поддерживает тег video."
+
+#: .\verbacast\settings.py:21
+msgid "English"
+msgstr ""
+
+#: .\verbacast\settings.py:22
+msgid "Hindi"
+msgstr ""
+
+#: .\verbacast\settings.py:23
+msgid "Telugu"
+msgstr ""
+
+#: .\verbacast\settings.py:24
+msgid "Tamil"
+msgstr ""
+
+#: .\verbacast\settings.py:25
+msgid "Malayalam"
+msgstr ""
+
+#: .\verbacast\settings.py:26
+msgid "Kannada"
+msgstr ""
+
+#: .\verbacast\settings.py:27
+msgid "Bengali"
+msgstr ""
+
+#: .\verbacast\settings.py:28
+msgid "Gujarati"
+msgstr ""
+
+#: .\verbacast\settings.py:29
+msgid "Marathi"
+msgstr ""
+
+#: .\verbacast\settings.py:30
+msgid "Punjabi"
+msgstr ""
+
+#: .\verbacast\settings.py:31
+msgid "Urdu"
+msgstr ""
+
+#: .\verbacast\settings.py:32
+msgid "French"
+msgstr ""
+
+#: .\verbacast\settings.py:33
+msgid "Spanish"
+msgstr ""
+
+#: .\verbacast\settings.py:34
+msgid "German"
+msgstr ""
+
+#: .\verbacast\settings.py:35
+msgid "Russian"
+msgstr ""
+
+#: .\verbacast\settings.py:36
+msgid "Chinese (Simplified)"
+msgstr ""
+
+#: .\verbacast\settings.py:37
+msgid "Japanese"
+msgstr ""
+
+#: .\verbacast\settings.py:38
+msgid "Arabic"
+msgstr ""

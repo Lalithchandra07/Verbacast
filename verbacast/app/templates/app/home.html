@@ -1,0 +1,103 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% load i18n %}
+
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<!-- COVER VIDEO CONTAINER (PLAYS ONLY ON FIRST VISIT) -->
+<div id="cover-video-container" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 9999; background: black; display: none;">
+    <video id="cover-video" width="100%" height="100%" autoplay muted>
+        <source src="{% static 'app/videos/cover.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="main-content" class="container mt-5">
+  <h1 class="display-4 text-center">{% trans "Welcome to VerbaCast" %}</h1>
+  <p class="lead text-center">{% trans "Break language barriers in videos. Globally. Seamlessly." %}</p>
+
+  <section class="mt-5">
+    <h2>🎯 {% trans "What VerbaCast Does" %}</h2>
+    <ul>
+      <li>🎙️ <strong>{% trans "Speech Recognition</strong>: detects and transcribes spoken content." %}</li>
+      <li>🌐 <strong>{% trans "Translation Engine</strong>: Translates audio into 18 languages with high accuracy." %}</li>
+      <li>📝 <strong>{% trans "Captions/Subtitles</strong>: Adds accurate, bilingual, and styled captions." %}</li>
+      <li>🔉 <strong>{% trans "Audio Replacement</strong>: Overwrites original audio with natural TTS output." %}</li>
+    </ul>
+  </section>
+
+  <section class="mt-5">
+    <h2>🚀 {% trans "Why Choose VerbaCast" %}</h2>
+    <ul>
+      <li>🌎 {% trans "Expand your audience across regions and cultures." %}</li>
+      <li>💬 {% trans "Accurate speech-to-text and translation using state-of-the-art AI." %}</li>
+      <li>🛠️ {% trans "Intuitive workflow — no editing experience needed." %}</li>
+      <li>📱 {% trans "Works across desktop and mobile browsers." %}</li>
+      <li>🔐 {% trans "Privacy-first: Your files stay yours." %}</li>
+    </ul>
+  </section>
+
+  <section class="mt-5">
+    <h2>🌍 {% trans "Supported Languages" %}</h2>
+    <p>{% trans "English, Hindi, Telugu, Tamil, Malayalam, Bengali, Arabic, French, German, Chinese, and more…" %}</p>
+  </section>
+
+  <section class="mt-5">
+    <h2>🧭 {% trans "How It Works" %}</h2>
+    <ol>
+      <li>{% trans "Upload your video" %}</li>
+      <li>{% trans "Select the target language" %}</li>
+      <li>{% trans "Download the translated video." %}</li>
+    </ol>
+  </section>
+
+  <section class="mt-5">
+    <h2>💡 {% trans "Use Cases" %}</h2>
+    <ul>
+      <li>🔊 {% trans "Video localization for global marketing" %}</li>
+      <li>🎓 {% trans "Educational content in regional languages" %}</li>
+      <li>🎥 {% trans "Dubbing for YouTubers, creators, and filmmakers" %}</li>
+      <li>📰 {% trans "News and informational videos in native dialects" %}</li>
+    </ul>
+  </section>
+
+  <section class="mt-5 text-center">
+    <h2>🧪 {% trans "Try VerbaCast Now" %}</h2>
+    <p>{% trans "Upload your first video and see VerbaCast in action" %}</p>
+    <a href="{% url 'translate_video' %}" class="btn btn-primary btn-lg mt-3">{% trans "Get Started" %}</a>
+  </section>
+</div>
+
+<!-- SCRIPT TO SHOW VIDEO ONLY ON FIRST VISIT -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const coverContainer = document.getElementById("cover-video-container");
+    const coverVideo = document.getElementById("cover-video");
+    const mainContent = document.getElementById("main-content");
+
+    // Optional: Hide content while video plays
+    mainContent.style.display = "none";
+
+    if (!localStorage.getItem("coverVideoSeen")) {
+      coverContainer.style.display = "block";
+      localStorage.setItem("coverVideoSeen", "true");
+
+      coverVideo.onended = function () {
+        coverContainer.style.display = "none";
+        mainContent.style.display = "block";
+
+        // Optional: Restore base.html cover image here via JS if needed
+      };
+    } else {
+      // If already seen, skip video
+      coverContainer.style.display = "none";
+      mainContent.style.display = "block";
+    }
+  });
+</script>
+
+{% endblock content %}

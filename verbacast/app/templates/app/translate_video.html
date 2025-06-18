@@ -1,0 +1,91 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+
+<h1>🎥 {% trans "Translate Your Video" %}</h1>
+
+<form id="upload-form" enctype="multipart/form-data" method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">{% trans "Translate" %}</button>
+</form>
+
+<!-- 🔄 Loading animation video -->
+<div id="loading-container" style="display:none; text-align: center; padding: 20px;">
+  <p>⏳ {% trans "Translating your video, please wait..." %}</p>
+  <video autoplay loop muted 
+         style="pointer-events: none; width: 80px; height: 80px; border-radius: 50%; opacity: 0.8;">
+    <source src="{% static 'app/videos/loading_animation.mp4' %}" type="video/mp4">
+    {% trans "Your browser does not support the video tag." %}
+  </video>
+</div>
+
+<!-- ✅ Translated Video -->
+<div id="translated-section" style="display:none;">
+  <h2>✅ {% trans "Translated Video" %}</h2>
+  <video id="translated-video" width="640" height="360" controls>
+    <source id="translated-video-src" src="" type="video/mp4">
+    {% trans "Your browser does not support the video tag." %}
+  </video>
+
+  <h3>📝 {% trans "Translated Captions" %}</h3>
+  <div style="border: 1px solid #ccc; padding: 10px; max-height: 200px; overflow-y: auto; background: #f9f9f9;">
+    <ul id="translated-captions-list"></ul>
+  </div>
+</div>
+
+<p id="error-msg" style="color: red;"></p>
+
+<script>
+document.getElementById("upload-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = new FormData(form);
+  const loading = document.getElementById("loading-container");
+  const result = document.getElementById("translated-section");
+  const errorMsg = document.getElementById("error-msg");
+
+  // Show loading, hide previous results and errors
+  loading.style.display = "block";
+  result.style.display = "none";
+  errorMsg.textContent = "";
+
+  fetch("{% url 'translate_video' %}", {
+    method: "POST",
+    headers: {
+      "X-CSRFToken": form.querySelector("[name=csrfmiddlewaretoken]").value
+    },
+    body: formData
+  })
+  .then(response => {
+    if (!response.ok) throw new Error("Something went wrong!");
+    return response.json();
+  })
+  .then(data => {
+    loading.style.display = "none";
+    result.style.display = "block";
+
+    // Load video
+    const videoSrc = document.getElementById("translated-video-src");
+    videoSrc.src = data.video_url;
+    document.getElementById("translated-video").load();
+
+    // Load captions
+    const list = document.getElementById("translated-captions-list");
+    list.innerHTML = "";
+    data.translated_captions.forEach(line => {
+      const li = document.createElement("li");
+      li.textContent = line;
+      list.appendChild(li);
+    });
+  })
+  .catch(error => {
+    loading.style.display = "none";
+    errorMsg.textContent = error.message || "Translation failed. Try again.";
+  });
+});
+</script>
+
+{% endblock %}

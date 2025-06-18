@@ -1,0 +1,46 @@
+{% extends 'app/base.html' %}
+{% load i18n %}
+{% block title %}About VerbaCast{% endblock %}
+
+{% block content %}
+<div class="max-w-5xl mx-auto p-6 bg-white shadow-md rounded-lg mt-8">
+  <header class="mb-10 text-center">
+    <h1 class="text-4xl font-bold text-blue-600 mb-2">{% trans "About VerbaCast" %}</h1>
+    <p class="text-lg text-gray-600">{% trans "Breaking language barriers in video communication" %}</p>
+  </header>
+
+  <section class="mb-10">
+    <h2 class="text-2xl font-semibold text-blue-500 mb-3">🎯{% trans " Goal" %}</h2>
+    <p class="text-gray-700 text-lg">
+      {% trans "VerbaCast is designed to make video content accessible across different languages and cultures. Its primary goal is to translate spoken content in videos, generate accurate captions, and provide voice-overs in the target language, creating a seamless multilingual experience." %}
+    </p>
+  </section>
+
+  <section>
+    <h2 class="text-2xl font-semibold text-blue-500 mb-3">⚙️ {% trans "How It Works" %}</h2>
+    <ol class="list-decimal list-inside text-gray-700 text-lg space-y-2">
+      <li>
+        <strong>{% trans "Upload Video:</strong> The user uploads a video file to the VerbaCast platform." %}
+      </li>
+      <li>
+        <strong>{% trans "Audio Extraction:</strong> Audio is extracted from the video using audio processing tools." %}
+      </li>
+      <li>
+        <strong>{% trans "Speech Recognition:</strong> The extracted audio is transcribed into text using speech-to-text models." %}
+      </li>
+      <li>
+        <strong>{% trans "Translation:</strong> The transcribed text is translated into the desired target language using reliable translation APIs." %}
+      </li>
+      <li>
+        <strong>{% trans "Text-to-Speech:</strong> The translated text is converted into natural-sounding speech." %}
+      </li>
+      <li>
+        <strong>{% trans "Caption Generation:</strong> Translated text is also used to generate subtitles in the target language." %}
+      </li>
+      <li>
+        <strong>{% trans "Video Rendering:</strong> The translated voice and captions are synchronized and embedded back into the video." %}
+      </li>
+    </ol>
+  </section>
+</div>
+{% endblock %}

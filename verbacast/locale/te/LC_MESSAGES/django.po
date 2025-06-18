@@ -1,0 +1,221 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-13 06:44+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\app\templates\app\about.html:8
+msgid "About VerbaCast"
+msgstr "VerbaCast గురించి"
+
+msgid "Breaking language barriers in video communication"
+msgstr "వీడియో కమ్యూనికేషన్‌లో భాషా అడ్డంకులను తొలగించడం"
+
+msgid " Goal"
+msgstr " లక్ష్యం"
+
+msgid ""
+"VerbaCast is designed to make video content accessible across different "
+"languages and cultures. Its primary goal is to translate spoken content in "
+"videos, generate accurate captions, and provide voice-overs in the target "
+"language, creating a seamless multilingual experience."
+msgstr ""
+"VerbaCast వివిధ భాషలు మరియు సంస్కృతుల మధ్య వీడియో కంటెంట్‌ను అందుబాటులోకి తేవడానికి రూపొందించబడింది. "
+"దీని ప్రధాన లక్ష్యం వీడియోలలోని మాటల్ని అనువదించడం, ఖచ్చితమైన శీర్షికలు రూపొందించడం, లక్ష్య భాషలో వాయిస్ ఓవర్ ఇవ్వడం ద్వారా అనుకూలమైన బహుభాషా అనుభవాన్ని కల్పించడం."
+
+msgid "How It Works"
+msgstr "ఇది ఎలా పనిచేస్తుంది"
+
+msgid "Upload Video:</strong> The user uploads a video file to the VerbaCast platform."
+msgstr "వీడియోను అప్‌లోడ్ చేయండి:</strong> వినియోగదారు VerbaCast ప్లాట్‌ఫారమ్‌కి వీడియో ఫైలును అప్‌లోడ్ చేస్తారు."
+
+msgid "Audio Extraction:</strong> Audio is extracted from the video using audio processing tools."
+msgstr "ఆడియో వెలికితీసే ప్రక్రియ:</strong> ఆడియో ప్రాసెసింగ్ టూల్స్‌ ద్వారా వీడియో నుంచి ఆడియో తీస్తారు."
+
+msgid "Speech Recognition:</strong> The extracted audio is transcribed into text using speech-to-text models."
+msgstr "పేరుగల గుర్తింపు:</strong> వెలికితీసిన ఆడియోను స్పీచ్-టు-టెక్స్ట్ మోడల్స్‌ ద్వారా టెక్స్ట్‌గా మార్చుతారు."
+
+msgid "Translation:</strong> The transcribed text is translated into the desired target language using reliable translation APIs."
+msgstr "అనువాదం:</strong> మార్చిన టెక్స్ట్‌ను నమ్మదగిన APIs ద్వారా కోరిన లక్ష్య భాషలోకి అనువదిస్తారు."
+
+msgid "Text-to-Speech:</strong> The translated text is converted into natural-sounding speech."
+msgstr "టెక్స్ట్-టు-స్పీచ్:</strong> అనువదించిన టెక్స్ట్‌ను సహజంగా వినిపించే ఆడియోగా మార్చుతారు."
+
+msgid "Caption Generation:</strong> Translated text is also used to generate subtitles in the target language."
+msgstr "శీర్షికల ఉత్పత్తి:</strong> అనువదించిన టెక్స్ట్‌ను టార్గెట్ భాషలో సబ్‌టైటిల్స్ రూపొందించడానికి ఉపయోగిస్తారు."
+
+msgid "Video Rendering:</strong> The translated voice and captions are synchronized and embedded back into the video."
+msgstr "వీడియో రెండరింగ్:</strong> అనువదించిన వాయిస్ మరియు శీర్షికలు వీడియోలో సమకాలీకరించి ఎంబెడ్ చేస్తారు."
+
+msgid "Welcome to VerbaCast"
+msgstr "VerbaCast కి స్వాగతం"
+
+msgid "Break language barriers in videos. Globally. Seamlessly."
+msgstr "వీడియోలలో భాషా అడ్డంకులను తొలగించండి. ప్రపంచవ్యాప్తంగా. అవరోధం లేకుండా."
+
+msgid "What VerbaCast Does"
+msgstr "VerbaCast ఏం చేస్తుంది"
+
+msgid "Speech Recognition</strong>: detects and transcribes spoken content."
+msgstr "పేరుగల గుర్తింపు</strong>: మాట్లాడిన విషయాన్ని గుర్తించి టెక్స్ట్‌గా మార్చుతుంది."
+
+msgid "Translation Engine</strong>: Translates audio into 18 languages with high accuracy."
+msgstr "అనువాద యంత్రం</strong>: ఆడియోను అధిక ఖచ్చితతతో 18 భాషలుగా అనువదిస్తుంది."
+
+msgid "Captions/Subtitles</strong>: Adds accurate, bilingual, and styled captions."
+msgstr "శీర్షికలు/సబ్‌టైటిల్స్</strong>: ఖచ్చితమైన, ద్విభాషా మరియు శైలీ శీర్షికలు చేర్చుతుంది."
+
+msgid "Audio Replacement</strong>: Overwrites original audio with natural TTS output."
+msgstr "ఆడియో రీప్లేస్‌మెంట్</strong>: అసలు ఆడియోను సహజమైన టి.టి.ఎస్ అవుట్‌పుట్‌తో మార్చుతుంది."
+
+msgid "Why Choose VerbaCast"
+msgstr "VerbaCast ఎందుకు ఎంచుకోవాలి"
+
+msgid "Expand your audience across regions and cultures."
+msgstr "మీ ప్రేక్షకులను ప్రాంతాలు మరియు సంస్కృతులపై విస్తరించండి."
+
+msgid "Accurate speech-to-text and translation using state-of-the-art AI."
+msgstr "ఆధునిక AIతో ఖచ్చితమైన స్పీచ్-టు-టెక్స్ట్ మరియు అనువాదం."
+
+msgid "Intuitive workflow — no editing experience needed."
+msgstr "సులభమైన పని ధోరణి — ఎడిటింగ్ అనుభవం అవసరం లేదు."
+
+msgid "Works across desktop and mobile browsers."
+msgstr "డెస్క్‌టాప్ మరియు మొబైల్ బ్రౌజర్లలో పనిచేస్తుంది."
+
+msgid "Privacy-first: Your files stay yours."
+msgstr "గోప్యతకు ప్రాధాన్యత: మీ ఫైళ్లు మీవే."
+
+msgid "Supported Languages"
+msgstr "మద్దతు ఉన్న భాషలు"
+
+msgid "English, Hindi, Telugu, Tamil, Malayalam, Bengali, Arabic, French, German, Chinese, and more…"
+msgstr "ఆంగ్లం, హిందీ, తెలుగు, తమిళం, మలయాళం, బెంగాలీ, అరబిక్, ఫ్రెంచ్, జర్మన్, చైనీస్ మరియు మరెన్నో…"
+
+msgid "Upload your video"
+msgstr "మీ వీడియోను అప్‌లోడ్ చేయండి"
+
+msgid "Select the target language"
+msgstr "లక్ష్య భాషను ఎంచుకోండి"
+
+msgid "Download the translated video."
+msgstr "మూల్యపరిచిన వీడియోను డౌన్‌లోడ్ చేసుకోండి."
+
+msgid "Use Cases"
+msgstr "వినియోగ సందర్భాలు"
+
+msgid "Video localization for global marketing"
+msgstr "ప్రపంచ మార్కెటింగ్ కోసం వీడియో లోకలైజేషన్"
+
+msgid "Educational content in regional languages"
+msgstr "ప్రాంతీయ భాషలలో విద్యా కంటెంట్"
+
+msgid "Dubbing for YouTubers, creators, and filmmakers"
+msgstr "YouTubers, క్రియేటర్స్ మరియు చలనచిత్ర దర్శకులకు డబ్బింగ్"
+
+msgid "News and informational videos in native dialects"
+msgstr "స్థానిక మాతృభాషలలో వార్తలు మరియు సమాచార వీడియోలు"
+
+msgid "Try VerbaCast Now"
+msgstr "ఇప్పుడు VerbaCast ప్రయత్నించండి"
+
+msgid "Upload your first video and see VerbaCast in action"
+msgstr "మీ మొదటి వీడియో అప్‌లోడ్ చేసి VerbaCast ఎలా పనిచేస్తుందో చూడండి"
+
+msgid "Get Started"
+msgstr "ప్రారంభించండి"
+
+msgid "Translate"
+msgstr "అనువదించు"
+
+msgid "Translated Video"
+msgstr "అనువదించిన వీడియో"
+
+msgid "Your browser does not support the video tag."
+msgstr "మీ బ్రౌజర్ వీడియో ట్యాగ్‌ను మద్దతివ్వదు."
+
+
+#: .\verbacast\settings.py:21
+msgid "English"
+msgstr ""
+
+#: .\verbacast\settings.py:22
+msgid "Hindi"
+msgstr ""
+
+#: .\verbacast\settings.py:23
+msgid "Telugu"
+msgstr ""
+
+#: .\verbacast\settings.py:24
+msgid "Tamil"
+msgstr ""
+
+#: .\verbacast\settings.py:25
+msgid "Malayalam"
+msgstr ""
+
+#: .\verbacast\settings.py:26
+msgid "Kannada"
+msgstr ""
+
+#: .\verbacast\settings.py:27
+msgid "Bengali"
+msgstr ""
+
+#: .\verbacast\settings.py:28
+msgid "Gujarati"
+msgstr ""
+
+#: .\verbacast\settings.py:29
+msgid "Marathi"
+msgstr ""
+
+#: .\verbacast\settings.py:30
+msgid "Punjabi"
+msgstr ""
+
+#: .\verbacast\settings.py:31
+msgid "Urdu"
+msgstr ""
+
+#: .\verbacast\settings.py:32
+msgid "French"
+msgstr ""
+
+#: .\verbacast\settings.py:33
+msgid "Spanish"
+msgstr ""
+
+#: .\verbacast\settings.py:34
+msgid "German"
+msgstr ""
+
+#: .\verbacast\settings.py:35
+msgid "Russian"
+msgstr ""
+
+#: .\verbacast\settings.py:36
+msgid "Chinese (Simplified)"
+msgstr ""
+
+#: .\verbacast\settings.py:37
+msgid "Japanese"
+msgstr ""
+
+#: .\verbacast\settings.py:38
+msgid "Arabic"
+msgstr ""

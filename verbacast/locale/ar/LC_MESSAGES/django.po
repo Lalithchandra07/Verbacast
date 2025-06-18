@@ -1,0 +1,296 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-13 06:49+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+#: .\app\templates\app\about.html:8
+msgid "About VerbaCast"
+msgstr "حول VerbaCast"
+
+#: .\app\templates\app\about.html:9
+msgid "Breaking language barriers in video communication"
+msgstr "تحطيم حواجز اللغة في التواصل عبر الفيديو"
+
+#: .\app\templates\app\about.html:13
+msgid " Goal"
+msgstr " الهدف"
+
+#: .\app\templates\app\about.html:15
+msgid ""
+"VerbaCast is designed to make video content accessible across different "
+"languages and cultures. Its primary goal is to translate spoken content in "
+"videos, generate accurate captions, and provide voice-overs in the target "
+"language, creating a seamless multilingual experience."
+msgstr ""
+"تم تصميم VerbaCast لجعل محتوى الفيديو متاحًا عبر لغات وثقافات مختلفة. "
+"يهدف بشكل رئيسي إلى ترجمة المحتوى المنطوق في الفيديوهات، وإنشاء تسميات دقيقة، "
+"وتوفير التعليق الصوتي باللغة المستهدفة، مما يخلق تجربة متعددة اللغات سلسة."
+
+#: .\app\templates\app\about.html:20 .\app\templates\app\home.html:50
+msgid "How It Works"
+msgstr "كيف يعمل"
+
+#: .\app\templates\app\about.html:23
+msgid ""
+"Upload Video:</strong> The user uploads a video file to the VerbaCast "
+"platform."
+msgstr ""
+"تحميل الفيديو:</strong> يقوم المستخدم بتحميل ملف فيديو إلى منصة VerbaCast."
+
+#: .\app\templates\app\about.html:26
+msgid ""
+"Audio Extraction:</strong> Audio is extracted from the video using audio "
+"processing tools."
+msgstr ""
+"استخراج الصوت:</strong> يتم استخراج الصوت من الفيديو باستخدام أدوات معالجة الصوت."
+
+#: .\app\templates\app\about.html:29
+msgid ""
+"Speech Recognition:</strong> The extracted audio is transcribed into text "
+"using speech-to-text models."
+msgstr ""
+"التعرّف على الكلام:</strong> يتم تحويل الصوت المستخرج إلى نص باستخدام نماذج تحويل الكلام إلى نص."
+
+#: .\app\templates\app\about.html:32
+msgid ""
+"Translation:</strong> The transcribed text is translated into the desired "
+"target language using reliable translation APIs."
+msgstr ""
+"الترجمة:</strong> يتم ترجمة النص المحول إلى اللغة المستهدفة باستخدام واجهات برمجة تطبيقات موثوقة."
+
+#: .\app\templates\app\about.html:35
+msgid ""
+"Text-to-Speech:</strong> The translated text is converted into natural-"
+"sounding speech."
+msgstr ""
+"تحويل النص إلى كلام:</strong> يتم تحويل النص المترجم إلى صوت طبيعي."
+
+#: .\app\templates\app\about.html:38
+msgid ""
+"Caption Generation:</strong> Translated text is also used to generate "
+"subtitles in the target language."
+msgstr ""
+"إنشاء التسميات:</strong> يتم أيضًا استخدام النص المترجم لإنشاء ترجمات باللغة المستهدفة."
+
+#: .\app\templates\app\about.html:41
+msgid ""
+"Video Rendering:</strong> The translated voice and captions are synchronized "
+"and embedded back into the video."
+msgstr ""
+"إخراج الفيديو:</strong> يتم مزامنة الصوت والترجمات المترجمة ودمجهما في الفيديو."
+
+#: .\app\templates\app\home.html:20
+msgid "Welcome to VerbaCast"
+msgstr "مرحبًا بك في VerbaCast"
+
+#: .\app\templates\app\home.html:21
+msgid "Break language barriers in videos. Globally. Seamlessly."
+msgstr "اكسر حواجز اللغة في الفيديوهات. عالميًا. بسلاسة."
+
+#: .\app\templates\app\home.html:24
+msgid "What VerbaCast Does"
+msgstr "ماذا يفعل VerbaCast"
+
+#: .\app\templates\app\home.html:26
+msgid "Speech Recognition</strong>: detects and transcribes spoken content."
+msgstr "التعرّف على الكلام</strong>: يكتشف المحتوى المنطوق وينقله إلى نص."
+
+#: .\app\templates\app\home.html:27
+msgid ""
+"Translation Engine</strong>: Translates audio into 18 languages with high "
+"accuracy."
+msgstr ""
+"محرك الترجمة</strong>: يترجم الصوت إلى 18 لغة بدقة عالية."
+
+#: .\app\templates\app\home.html:28
+msgid ""
+"Captions/Subtitles</strong>: Adds accurate, bilingual, and styled captions."
+msgstr ""
+"التسميات/الترجمات</strong>: يضيف ترجمات دقيقة ثنائية اللغة وبأسلوب مميز."
+
+#: .\app\templates\app\home.html:29
+msgid ""
+"Audio Replacement</strong>: Overwrites original audio with natural TTS "
+"output."
+msgstr ""
+"استبدال الصوت</strong>: يستبدل الصوت الأصلي بصوت ناتج من تحويل النص إلى كلام."
+
+#: .\app\templates\app\home.html:34
+msgid "Why Choose VerbaCast"
+msgstr "لماذا تختار VerbaCast"
+
+#: .\app\templates\app\home.html:36
+msgid "Expand your audience across regions and cultures."
+msgstr "وسّع جمهورك عبر المناطق والثقافات."
+
+#: .\app\templates\app\home.html:37
+msgid "Accurate speech-to-text and translation using state-of-the-art AI."
+msgstr "تحويل الكلام إلى نص وترجمة دقيقة باستخدام أحدث تقنيات الذكاء الاصطناعي."
+
+#: .\app\templates\app\home.html:38
+msgid "Intuitive workflow — no editing experience needed."
+msgstr "سير عمل بديهي — لا حاجة لأي خبرة تحرير."
+
+#: .\app\templates\app\home.html:39
+msgid "Works across desktop and mobile browsers."
+msgstr "يعمل عبر متصفحات سطح المكتب والجوال."
+
+#: .\app\templates\app\home.html:40
+msgid "Privacy-first: Your files stay yours."
+msgstr "خصوصية أولًا: ملفاتك تبقى لك."
+
+#: .\app\templates\app\home.html:45
+msgid "Supported Languages"
+msgstr "اللغات المدعومة"
+
+#: .\app\templates\app\home.html:46
+msgid ""
+"English, Hindi, Telugu, Tamil, Malayalam, Bengali, Arabic, French, German, "
+"Chinese, and more…"
+msgstr ""
+"الإنجليزية، الهندية، التيلجو، التاميل، المالايالام، البنغالية، العربية، الفرنسية، "
+"الألمانية، الصينية، والمزيد…"
+
+#: .\app\templates\app\home.html:52
+msgid "Upload your video"
+msgstr "حمّل الفيديو الخاص بك"
+
+#: .\app\templates\app\home.html:53
+msgid "Select the target language"
+msgstr "اختر اللغة المستهدفة"
+
+#: .\app\templates\app\home.html:54
+msgid "Download the translated video."
+msgstr "حمّل الفيديو المُترجم."
+
+#: .\app\templates\app\home.html:59
+msgid "Use Cases"
+msgstr "استخدامات"
+
+#: .\app\templates\app\home.html:61
+msgid "Video localization for global marketing"
+msgstr "محلية الفيديو للتسويق العالمي"
+
+#: .\app\templates\app\home.html:62
+msgid "Educational content in regional languages"
+msgstr "محتوى تعليمي باللغات المحلية"
+
+#: .\app\templates\app\home.html:63
+msgid "Dubbing for YouTubers, creators, and filmmakers"
+msgstr "دبلجة لمنشئي يوتيوب والمبدعين وصناع الأفلام"
+
+#: .\app\templates\app\home.html:64
+msgid "News and informational videos in native dialects"
+msgstr "فيديوهات إخبارية ومعلوماتية بلهجات محلية"
+
+#: .\app\templates\app\home.html:69
+msgid "Try VerbaCast Now"
+msgstr "جرّب VerbaCast الآن"
+
+#: .\app\templates\app\home.html:70
+msgid "Upload your first video and see VerbaCast in action"
+msgstr "حمّل أول فيديو لك وشاهد VerbaCast أثناء العمل"
+
+#: .\app\templates\app\home.html:71
+msgid "Get Started"
+msgstr "ابدأ الآن"
+
+#: .\app\templates\app\translate_video.html:10
+msgid "Translate"
+msgstr "ترجمة"
+
+#: .\app\templates\app\translate_video.html:14
+msgid "Translated Video"
+msgstr "فيديو مترجم"
+
+#: .\app\templates\app\translate_video.html:17
+msgid "Your browser does not support the video tag."
+msgstr "متصفحك لا يدعم عنصر الفيديو."
+
+
+#: .\verbacast\settings.py:21
+msgid "English"
+msgstr ""
+
+#: .\verbacast\settings.py:22
+msgid "Hindi"
+msgstr ""
+
+#: .\verbacast\settings.py:23
+msgid "Telugu"
+msgstr ""
+
+#: .\verbacast\settings.py:24
+msgid "Tamil"
+msgstr ""
+
+#: .\verbacast\settings.py:25
+msgid "Malayalam"
+msgstr ""
+
+#: .\verbacast\settings.py:26
+msgid "Kannada"
+msgstr ""
+
+#: .\verbacast\settings.py:27
+msgid "Bengali"
+msgstr ""
+
+#: .\verbacast\settings.py:28
+msgid "Gujarati"
+msgstr ""
+
+#: .\verbacast\settings.py:29
+msgid "Marathi"
+msgstr ""
+
+#: .\verbacast\settings.py:30
+msgid "Punjabi"
+msgstr ""
+
+#: .\verbacast\settings.py:31
+msgid "Urdu"
+msgstr ""
+
+#: .\verbacast\settings.py:32
+msgid "French"
+msgstr ""
+
+#: .\verbacast\settings.py:33
+msgid "Spanish"
+msgstr ""
+
+#: .\verbacast\settings.py:34
+msgid "German"
+msgstr ""
+
+#: .\verbacast\settings.py:35
+msgid "Russian"
+msgstr ""
+
+#: .\verbacast\settings.py:36
+msgid "Chinese (Simplified)"
+msgstr ""
+
+#: .\verbacast\settings.py:37
+msgid "Japanese"
+msgstr ""
+
+#: .\verbacast\settings.py:38
+msgid "Arabic"
+msgstr ""

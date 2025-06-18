@@ -1,0 +1,76 @@
+{% load static %}
+{% load i18n %}
+
+<!-- base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Website{% endblock %}</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="{% static 'app/static/style.css' %}"> 
+</head>
+<body>
+<div id="base-cover" class="transition transition-1 is-active">
+    <img src="{% static 'app/images/logo.png' %}" height="180px">
+</div>
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-logo">
+            <img src="{% static 'app/images/logo.png' %}" width="60px" height="50px" alt="Logo">
+        </a>
+    </div>
+    <ul class="navbar-links">
+        <li><a href="{% url 'home' %}">Home</a></li>
+
+        <li><a href="{% url 'translate_video' %}">Translator</a></li>
+
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li>
+            {%  if request.user.is_authenticated  %}
+              <a href="{%  url 'logout'%}">Logout</a>
+            {% else %}
+              <a href="{%  url 'login'%}">Login</a>
+            {%  endif  %}
+          </li>
+        <li><a href="{% url 'register' %}">Register</a></li>
+    </ul>
+    
+    <form action="{% url 'set_language' %}" method="post">
+  {% csrf_token %}
+  <select name="language">
+    {% get_current_language as LANGUAGE_CODE %}
+    {% get_available_languages as LANGUAGES %}
+    {% for lang in LANGUAGES %}
+      <option value="{{ lang.0 }}"{% if lang.0 == LANGUAGE_CODE %} selected{% endif %}>
+        {{ lang.1 }}
+      </option>
+    {% endfor %}
+  </select>
+  <button type="submit">Change</button>
+</form>
+    <div class="navbar-toggle">
+        <!-- Icon for mobile toggle (burger icon) -->
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="content">
+    {% block content %}
+    <!-- Content for each page will be injected here -->
+    {% endblock %}
+</div>
+
+<!-- Footer (Optional) -->
+<footer>
+    <p>&copy; 2025 This Website belongs to @ 111723039110</p>
+</footer>
+
+<!-- JavaScript for responsive toggle -->
+<script src="{%static 'app/js/transition.js'%}"></script>
+</body>
+</html>
