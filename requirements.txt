@@ -1,0 +1,32 @@
+# Core web framework
+Django>=4.2
+
+# Authentication (built-in to Django)
+
+# Audio & Video processing
+moviepy>=1.0.3
+pydub>=0.25.1
+gTTS>=2.5.1
+
+# Translation and Language Detection
+deep-translator>=1.11.4
+langdetect>=1.0.9
+googletrans==4.0.0-rc1
+
+# Speech recognition
+openai-whisper>=20231106
+torch>=2.0.0
+
+# Hugging Face Transformers (optional, used in your import)
+transformers>=4.40.0
+
+# File storage (handled by Django's default system)
+
+# Misc
+numpy>=1.24.0
+ffmpeg-python>=0.2.0
+
+# For compatibility with pydub and moviepy
+imageio>=2.31.0
+imageio-ffmpeg>=0.4.8
+tqdm>=4.65.0
